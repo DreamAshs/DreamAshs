@@ -3,6 +3,8 @@ run-name: ${{ github.actor }}
 on: [push]
 jobs:
   deploy:
+    permissions: write-all
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
